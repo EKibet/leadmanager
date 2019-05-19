@@ -9,7 +9,9 @@ class Lead extends Component {
         this.props.getLead()
     }
     static propTypes = {
-        lead: PropTypes.array.isRequired
+        lead: PropTypes.array.isRequired,
+        getLead:PropTypes.func.isRequired,
+        deleteLead: PropTypes.func.isRequired
     }
     render() {
         return (
